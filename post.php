@@ -1,6 +1,40 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>Data Recorded</title>
+<style>
+
+      .button {
+      
+      background-color: #1f62b5;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      
+      }
+      .button {
+      box-shadow:
+      0 8px 16px 0
+      rgba(0,0,0,0.2),
+      0 6px 20px 0
+      rgba(0,0,0,0.19);
+      }
+      
+      .button:hover {
+      background-color: #0d9418;
+      box-shadow: 
+      0 12px 16px 0
+      rgba(0,0,0,0.24),
+      0 17px 50px 0
+      rgba(0,0,0,0.19);
+      }
+      
+
+</style>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       
       <script> 
@@ -38,12 +72,12 @@ if (!$conn) {
     
                
             $FirstName = $_POST['FirstName'] ;
-            $SureName = $_POST['SureName'] ;
+            $Surname = $_POST['Surname'] ;
             
             
             
-            $stmt = $conn->prepare("insert into form(FirstName, SureName) values(?,?)");
-            $stmt->bind_param("ss",$FirstName, $SureName);
+            $stmt = $conn->prepare("insert into form(FirstName, Surname) values(?,?)");
+            $stmt->bind_param("ss",$FirstName, $Surname);
             $stmt->execute();
             $stmt->close();
             
@@ -52,7 +86,7 @@ if (!$conn) {
 //alter table form AUTO_increment = 1;
             
 echo "<b>Name:</b>"," ",$_POST["FirstName"]."<br>";
-echo "<b>Sure Name:</b>"," ",$_POST["SureName"]."<br>";
+echo "<b>Surname:</b>"," ",$_POST["Surname"]."<br>";
 echo "<b>Street Address:</b>"," ",$_POST["streetaddress"]."<br>";
 echo "<b>Street Address:</b>"," ",$_POST["streetaddress2"]."<br>";
 echo "<b>City:</b>"," ",$_POST["City"]."<br>";
@@ -77,7 +111,7 @@ echo "<b>Weight Category:</b>"," ",$_POST["weightcategory"]."<br>";
 
 ?>
 
-<a href="http://localhost/myeclipse2021/Forms/"><button id="resetform">Back</button></a>
+<a href="http://localhost/myeclipse2021/Forms/"><button id="resetform" class="button">Back</button></a>
  
 
 </div>

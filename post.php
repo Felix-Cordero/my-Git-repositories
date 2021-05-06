@@ -3,6 +3,42 @@
 <head>
 <title>Data Recorded</title>
 <style>
+     .name {
+     
+     
+     }
+
+  
+      .container {
+      width:100%;
+      position:;
+      margin-right:;
+      border-radius:20px;
+      background-color: #fef7ed;
+      padding:3%;
+      
+      }
+      
+      
+      .fborder {
+      border-color: #d7d4d8;
+      border-radius: 10px;
+      padding:10px;
+      padding-right:auto;
+      border-style: solid;
+      border-width: .5px;
+      border-color:#d7d4d8;
+      }
+      
+      .column {
+      width:47%;
+      padding:10px;
+      height:;
+      margin-right:;
+      }
+      
+      
+
 
       .button {
       
@@ -48,9 +84,9 @@
      </script>
 </head>
 
-<body>
+<body class="container">
 
-<div style="background-color:lightgreen; padding:10px; width:20%;">
+<div style="background-color:lightgreen; padding:10px; margin-left:20%; margin-right:20%;">
 <?php
 $servername = "localhost";
 $username = "root";

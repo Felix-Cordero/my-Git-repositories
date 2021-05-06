@@ -4,13 +4,9 @@
       
       <meta charset="UTF-8">
       <title>Pet Profile Form</title>
-      
-     
-           
+          
       <style>
-      
-      
-      
+         
       p {
       color:grey;
       }
@@ -68,6 +64,7 @@
       font-size: 16px;
       
       }
+      
       .button {
       box-shadow:
       0 8px 16px 0
@@ -115,8 +112,10 @@
    </head>
    
    <body>
-      
-      <div class="container">
+   
+   <!--  -->
+   
+   		 <div class="container">
          <div>
             <h1 style="color:blue; margin:0;">Pet Profile Form</h1>
             <p style="margin:0;">Please tell us about pet(s). Please fill out the form more than once for each pet you have.</p>
@@ -128,7 +127,7 @@
             <div class="row">
                <input type="text" name="FirstName" placeholder="*First Name" class="column fborder" style="padding:10px;">
                
-               <input type="text" name="SureName" placeholder="*Sure Name" class="column fborder" style="padding:10px;">
+               <input type="text" name="Surname" placeholder="*Surname" class="column fborder" style="padding:10px;">
             </div>
             
             <br>
@@ -512,7 +511,7 @@
                             <button type="submit" value="Submit Pet Profile" class="button" onclick="return mess ();">Submit Pet Profile</button>
                             
                             </div>
-                            
+                           <!-- 
                             <script type="text/javascript">
 							function mess()
 							{
@@ -521,7 +520,7 @@
 							}
 
                             </script>
-                            
+                             --> 
                                                         
                            </div>
                         </form>

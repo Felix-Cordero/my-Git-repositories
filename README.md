@@ -1,2 +1,2 @@
 # my-Git-repositories
-My case study for WordPress Theme developing
+My case study in WordPress Theme developing and DIVI theme.
